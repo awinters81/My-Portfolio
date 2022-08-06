@@ -1,3 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: rgb(21, 48, 21);
+    color:#11702a;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    padding: 20px 35px;
+    background-color: black;
+}
+
+header h1{
+    color:rgb(83, 170, 105);
+    margin:0;
+    display: inline;
+}
+
+header a{
+    color:rgb(83, 170, 105) 
+}
+
+header nav{
+    float: right;
+    margin: 7px 0;
+}
+
+header nav ul li{
+    display: inline;
+}
+
+header nav ul li a{
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+h2{
+    color: #11702a;
+    text-align: center;
+}
+
+
+p{
+    color: #8ed6a1;
+    text-align: center;  
+}
+
+.hero{
+    height: 600px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../assets/images/Leaf\ Background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+footer{
+    padding: 20px 35px;
+    background-color: black;
 }
