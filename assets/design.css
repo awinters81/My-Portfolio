@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #0b110d;
 }
 
 body{
@@ -42,24 +43,41 @@ header nav ul li a{
 h2{
     color: #11702a;
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
 p{
     color: #8ed6a1;
-    text-align: center;  
+    text-align: center; 
+    font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 .hero{
     height: 600px;
     width: 100%;
-    margin-bottom: 25px;
     background-image: url("../assets/images/Leaf\ Background.jpg");
     background-position: center;
     background-size: cover;
+}
+
+.about-me, .projects, .contact-me{
+    background-color: #1c3624;
+    margin: 25px 20px
+}
+
+.about-me h2, .contact-me h2{
+    color: #11702a;
+    text-align: center;
+}
+
+.projects h2{
+    color: #11702a;
+    text-align: left;
 }
 
 footer{
     padding: 20px 35px;
     background-color: black;
 }
+
