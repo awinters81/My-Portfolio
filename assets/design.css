@@ -6,15 +6,21 @@
 }
 
 body{
-    color:#11702a;
+    color:#8ed6a1;
     font-family:Arial, Helvetica, sans-serif;
 }
 
 header{
-    padding: 20px 35px;
+    padding: 35px 35px;
     background-color: black;
+    display: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
+header div{
+    float: left;
+}
 header h1{
     color:rgb(83, 170, 105);
     margin:0;
@@ -22,22 +28,29 @@ header h1{
 }
 
 header a{
-    color:rgb(83, 170, 105) 
+    color:rgb(83, 170, 105);
+    display: inline;
 }
 
 header nav{
-    float: right;
     margin: 7px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-header nav ul li{
-    display: inline;
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 header nav ul li a{
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.45vw;
 }
 
 h2{
@@ -59,9 +72,10 @@ p{
     background-image: url("../assets/images/Leaf\ Background.jpg");
     background-position: center;
     background-size: cover;
+    border: 20px, #11702a;
 }
 
-.about-me, .projects, .contact-me{
+.about-me, .contact-me{
     background-color: #1c3624;
     margin: 25px 20px
 }
@@ -69,15 +83,64 @@ p{
 .about-me h2, .contact-me h2{
     color: #11702a;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-me ul{
+    color:#8ed6a1;
+    text-align: center;
+}
+
+.contact-me li{
+    display: inline;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.projects{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
 }
 
 .projects h2{
     color: #11702a;
+    margin-right: 10px;
+}
+
+.run-buddy{
+    background-image:url(./images/runner);
+    background-size: 500px 400px;
+    background-position: center;
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.run-buddy h3{
     text-align: left;
+}
+
+.horiseon{
+    background-image: url(./images/marketing);
+    background-size: 250px 200px;
+    background-position: center;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 footer{
     padding: 20px 35px;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
