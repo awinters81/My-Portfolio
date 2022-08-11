@@ -75,6 +75,14 @@ p{
     border: 20px, #11702a;
 }
 
+.about-me img{
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .about-me, .contact-me{
     background-color: #1c3624;
     margin: 25px 20px
@@ -116,9 +124,9 @@ p{
 
 .run-buddy{
     background-image:url(./images/runner);
-    background-size: 500px 400px;
-    background-position: center;
-    padding: 100px;
+    background-size: 400px 500px;
+    background-position: fill;
+    padding: 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
