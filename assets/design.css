@@ -1,18 +1,19 @@
 *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body{
     color:#8ed6a1;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     background-color: #0b110d;
 }
 
 header{
     padding: 35px 35px;
     background-color: black;
+    position: sticky;
+    top: 0;
     display: flex-end;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -25,11 +26,15 @@ header h1{
     color:rgb(83, 170, 105);
     margin:0;
     display: inline;
+    font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
+
 
 header a{
     color:rgb(83, 170, 105);
+    float: right;
     display: inline;
+    font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 header nav{
@@ -56,12 +61,13 @@ header nav ul li a{
 h2{
     color: #11702a;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 
+
 p{
-    color: #8ed6a1;
+    color: #1c3624;
     text-align: center; 
     font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
@@ -90,9 +96,17 @@ p{
 
 .about-me h2, .contact-me h2{
     color: #11702a;
+    font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 32px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+ 
+.about-me p{
+    color: #8ed6a1;
+    text-align: center; 
+    font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 .contact-me ul{
@@ -108,39 +122,96 @@ p{
 
 .projects{
     background-color: #245834;
-    height: 500px;
-    border-right:2px solid #8ed6a1;
+    border-right: 2px solid #8ed6a1;
+    margin: 25px 20px;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content:left;
+    justify-content:center;
+}
+
+span{ 
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 500px;
 }
 
 .projects h2{
     color: #0b110d;
-    margin-right: 10px;
-    
+    font-size: larger;
+    font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    display: flex;
+    vertical-align: middle;
+    height: 450px;
+    width: 35px;
+    line-height: 100px;
+    padding: 10px;
+}
+
+.run-buddy p, .horiseon p, .soon-1 p, .soon-2 p{
+        color: #1c3624;
+        text-align: center; 
+        font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 .run-buddy{
     background-image:url(./images/runner);
-    background-size: 400px 500px;
+    background-size: 450px 500px;
     background-position: fill;
-    padding: 200px;
+    border: 2px solid #8ed6a1;
+    margin: 30px;
+    padding: 200px 250px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.run-buddy h3{
+.run-buddy h3, .run-buddy-descrip{
+    color:#1c3624;
+    font-size: 35px;
+    font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     text-align: left;
+    background-color: #8ed6a1;
+}
+
+.add-projects{
+    height: 450px;
+    margin: 20px;
 }
 
 .horiseon{
     background-image: url(./images/marketing);
     background-size: 250px 200px;
     background-position: center;
+    border: 2px solid #8ed6a1;
+    margin: 20px;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.soon-1{
+    background-image: url(./images/coming\ 1);
+    background-size: 250px 200px;
+    background-position: center;
+    border: 2px solid #8ed6a1;
+    margin: 20px;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.soon-2{
+    background-image: url(./images/coming\ 2);
+    background-size: 250px 200px;
+    background-position: center;
+    border: 2px solid #8ed6a1;
+    margin: 20px;
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -149,10 +220,10 @@ p{
 }
 
 footer{
-    padding: 20px 35px;
+    height:50px;
+    position: static;
     background-color: black;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
-
