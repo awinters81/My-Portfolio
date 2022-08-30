@@ -1,3 +1,9 @@
+/* To add additional fonts to html that are not usually found, add to html file
+or to css file?
+font-face w/ font-family didn't work, src incorrect?
+Address for second attempt...
+*/
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -9,39 +15,32 @@ body{
     background-color: #0b110d;
 }
 
+/* HEADER STYLE*/
+
 header{
     padding: 35px 35px;
     background-color: black;
     position: sticky;
     top: 0;
-    display: flex-end;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-header div{
-    float: left;
-}
 header h1{
     color:rgb(83, 170, 105);
     margin:0;
-    display: inline;
     font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
-
 header a{
     color:rgb(83, 170, 105);
-    float: right;
-    display: inline;
+    text-decoration: none;
     font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 header nav{
     margin: 7px 0;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 header nav ul{
@@ -52,10 +51,14 @@ header nav ul{
     list-style: none;
 }
 
+header nav ul li{
+    display: inline;
+}
+
 header nav ul li a{
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 1.45vw;
+    font-size: 2vw;
 }
 
 h2{
@@ -64,13 +67,13 @@ h2{
     font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
-
-
 p{
     color: #1c3624;
     text-align: center; 
     font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
+
+/* HERO STYLE */
 
 .hero{
     height: 600px;
@@ -81,6 +84,8 @@ p{
     border: 20px, #11702a;
 }
 
+/* ABOUT ME STYLE */
+
 .about-me img{
     max-width: 40%;
     height: auto;
@@ -89,9 +94,18 @@ p{
     margin-right: auto;
 }
 
+.about-me p{
+    color: #8ed6a1;
+    text-align: center; 
+    font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+/*SHARED STYLES*/
+
 .about-me, .contact-me{
     background-color: #1c3624;
-    margin: 25px 20px
+    margin: 25px 20px;
+    border: 2px solid #8ed6a1;
 }
 
 .about-me h2, .contact-me h2{
@@ -103,11 +117,7 @@ p{
     margin-bottom: 10px;
 }
  
-.about-me p{
-    color: #8ed6a1;
-    text-align: center; 
-    font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-}
+/* CONTACT ME STYLE */
 
 .contact-me ul{
     color:#8ed6a1;
@@ -120,9 +130,11 @@ p{
     margin-right: 25px;
 }
 
+/* PROJECTS STYLE */
+
 .projects{
     background-color: #245834;
-    border-right: 2px solid #8ed6a1;
+    border: 2px solid #8ed6a1;
     margin: 25px 20px;
     padding: 10px;
     display: flex;
@@ -133,26 +145,24 @@ p{
 span{ 
     margin-left: 20px;
     margin-right: 20px;
-    height: 500px;
+    height: 300px;
 }
+
+/*Look up how to get vertically aligned text to match wireframe*/
 
 .projects h2{
     color: #0b110d;
-    font-size: larger;
+    font-size: 32pt;
     font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     display: flex;
     vertical-align: middle;
-    height: 450px;
+    height: 200px;
     width: 35px;
-    line-height: 100px;
+    line-height: 65px;
     padding: 10px;
 }
 
-.run-buddy p, .horiseon p, .soon-1 p, .soon-2 p{
-        color: #1c3624;
-        text-align: center; 
-        font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-}
+/* RUN BUDDY STYLE*/
 
 .run-buddy{
     background-image:url(./images/runner);
@@ -180,6 +190,8 @@ span{
     margin: 20px;
 }
 
+/* HORISEON STYLE */
+
 .horiseon{
     background-image: url(./images/marketing);
     background-size: 250px 200px;
@@ -189,9 +201,11 @@ span{
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
+
+/* PROJECT 3 STYLE */
 
 .soon-1{
     background-image: url(./images/coming\ 1);
@@ -202,9 +216,11 @@ span{
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
+
+/* PROJECT 4 STYLE */
 
 .soon-2{
     background-image: url(./images/coming\ 2);
@@ -215,9 +231,19 @@ span{
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
 }
+
+/* SHARED STYLES*/
+
+.run-buddy p, .horiseon p, .soon-1 p, .soon-2 p{
+        color: #1c3624;
+        text-align: center; 
+        font-family: Gill Sans, 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+/* FOOTER STYLE */
 
 footer{
     height:50px;
