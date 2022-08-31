@@ -13,9 +13,10 @@ https://awinters81.github.io/My-Portfolio/
 <h2>Contribution</h2>
 Created by Alexandria Winters
 
-<h2>Screenshots</h2>
+<h2>Wireframe</h2>
 <img src= "./assets/images/Wireframe.jpg">
 
+<h2>Screenshots</h2>
 <img src= "./assets/images/snap2.jpg">
 
 <img src= "./assets/images/snap1.jpg">
