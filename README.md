@@ -15,3 +15,7 @@ Created by Alexandria Winters
 
 <h2>Screenshots</h2>
 <img src= "./assets/images/Wireframe.jpg">
+
+<img src= "./assets/images/snap-2.jpg">
+
+<img src= "./assets/images/snap-1.jpg">
